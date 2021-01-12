@@ -1,8 +1,8 @@
 import kotlin.math.pow
 
 fun main() {
-    // run(19);
-    reverseString("Hello World");
+    // run(19)
+    reverseString("Hello World")
 }
 
 fun run(n: Int): Int {
@@ -19,6 +19,25 @@ fun run(n: Int): Int {
 }
 
 fun reverseString(input: String): String {
-    // println(input.reversed());
-    return input;
+    // println(input.reversed())
+    println(input)
+
+    var result = "";
+    var lenght = input.length
+    val data = arrayOfNulls<String>(lenght)
+
+    val list = mutableListOf<String>()
+    val reverselist = data.toMutableList()
+
+    for (char in input) {
+        list.add(char.toString())
+        reverselist.set(--lenght, char.toString())
+    }
+
+    for (char in reverselist) {
+        result += char
+    }
+
+    println(result)
+    return input
 }
