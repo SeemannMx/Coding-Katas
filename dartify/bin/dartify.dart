@@ -1,9 +1,12 @@
 import 'dart:math';
 
-//_runByString(n);
 void main(List<String> arguments) {
   int n = 19;
-  print('Happy Number: ${_run(n)}');
+
+  // _run(n);
+  // _runByString(n);
+
+  _reverseString('Hello World');
 }
 
 int _run(int n) {
@@ -16,8 +19,9 @@ int _run(int n) {
     n = n ~/ 10;
 
     // Integer Division
-    n = (n / 10).toInt();
+    // n = (n / 10).toInt();
   }
+  print('Happy Number: ${result}');
   return result;
 }
 
@@ -42,3 +46,19 @@ _runByString(int n) {
   print(result);
 }
 */
+
+_reverseString(String input){
+  List <int> myList = [];
+
+  input.runes.forEach((element) {
+    myList.add(element);
+  });
+
+  String myString = '';
+  myList.reversed.forEach((char) {
+    myString += String.fromCharCode(char);
+  });
+
+  print(input);
+  print(myString);
+}
