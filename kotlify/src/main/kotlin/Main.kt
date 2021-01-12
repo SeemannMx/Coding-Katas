@@ -1,7 +1,8 @@
 import kotlin.math.pow
 
 fun main() {
-    print("Happy Number: ${run(19)}")
+    // run(19);
+    reverseString("Hello World");
 }
 
 fun run(n: Int): Int {
@@ -13,5 +14,11 @@ fun run(n: Int): Int {
         tempN /= 10
     }
 
+    println("Happy Number: ${result}")
     return result;
+}
+
+fun reverseString(input: String): String {
+    // println(input.reversed());
+    return input;
 }
