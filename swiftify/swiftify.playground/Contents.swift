@@ -19,14 +19,19 @@ print("Happy Number: ", result)
 var inputtString = "Hello World"
 var resultString = ""
 var lenght = inputtString.count
+var index = 1
 
-print("input  String: ", inputtString)
+print("input    String: ", inputtString)
 
 while lenght != 0 {
-    var char = inputtString[inputtString.index(inputtString.endIndex, offsetBy: -1 * lenght)]
-    print("char: ", char)
     
+    let char = inputtString[inputtString.index(inputtString.endIndex, offsetBy: -1 * index)]
+    // print("char: ", char)
+    
+    index = index + 1
     lenght = lenght - 1
+    
+    resultString = resultString + String(char)
 }
 
-print("result String: ", resultString)
+print("reversed String: ", resultString)
