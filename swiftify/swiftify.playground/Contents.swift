@@ -1,6 +1,10 @@
 import Cocoa
 
-// run playground with tap + cmd + enter
+/*
+ * run playground with tap + cmd + enter
+ */
+
+// Happy Numbers
 var n = 19
 var result = 0
 var pow = 0
@@ -16,6 +20,8 @@ while n != 0 {
 
 print("Happy Number: ", result)
 
+
+// Reverse String
 var inputtString = "Hello World"
 var resultString = ""
 var lenght = inputtString.count
@@ -26,7 +32,6 @@ print("input    String: ", inputtString)
 while lenght != 0 {
     
     let char = inputtString[inputtString.index(inputtString.endIndex, offsetBy: -1 * index)]
-    // print("char: ", char)
     
     index = index + 1
     lenght = lenght - 1
