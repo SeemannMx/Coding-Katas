@@ -5,9 +5,19 @@ void main(List<String> arguments) {
 
   // _run(n);
   // _runByString(n);
+  // _reverseString('Hello World');
 
-  _reverseString('Hello World');
+  _test();
 }
+
+_test(){
+
+  
+
+
+}
+
+
 
 int _run(int n) {
   var result = 0;
